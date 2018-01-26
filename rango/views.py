@@ -10,9 +10,12 @@ def index(request):
     # Return a rendered response to send to the client.
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
-    return render(request, 'rango/index.html', context=context_dict)
+    return render(request, 'rango/index.html', context=context_dict)
 
     #return HttpResponse('Rango says hey there partner! <br/> <a href="/rango/about/">About</a>')
 
 def about(request):
-    return HttpResponse('Rango says here is the about page. <br/> <a href="/rango/">Index</a>')
+    context_dict = {'boldmessage': "This tutorial has been put together by Daniela Ivanova"}
+    return render(request, 'rango/about.html', context=context_dict)
+
+    #return HttpResponse('Rango says here is the about page. <br/> <a href="/rango/">Index</a>')
