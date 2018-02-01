@@ -12,28 +12,35 @@ def populate():
     # This might seem a little bit confusing, but it allows us to iterate
     # through each data structure, and add the data to our models.
     
-    python_pages = [
-        {"title": "Official Python Tutorial",
-         "url":"http://docs.python.org/2/tutorial/"},
-        {"title":"How to Think like a Computer Scientist",
-         "url":"http://www.greenteapress.com/thinkpython/"},
-        {"title":"Learn Python in 10 Minutes",
-         "url":"http://www.korokithakis.net/tutorials/python/"} ]
-
-    django_pages = [
-        {"title":"Official Django Tutorial",
-         "url":"https://docs.djangoproject.com/en/1.9/intro/tutorial01/"},
-        {"title":"Django Rocks",
-         "url":"http://www.djangorocks.com/"},
-        {"title":"How to Tango with Django",
-         "url":"http://www.tangowithdjango.com/"} ]
-
-    other_pages = [
-        {"title":"Bottle",
-         "url":"http://bottlepy.org/docs/dev/"},
-        {"title":"Flask",
-         "url":"http://flask.pocoo.org"} ]
+    python_pages=[
+    {"title":"Official Python Tutorial",
+    "url":"http://docs.python.org/2/tutorial/",
+    "views":7},
+    {"title":"How to Think like a Computer Scientist",
+    "url":"http://www.greenteapress.com/thinkpython/",
+    "views":13},
+    {"title":"Learn Python in 10 Minutes",
+    "url":"http://www.korokithakis.net/tutorials/python/",
+    "views":18}]
     
+    django_pages=[
+    {"title":"Official Django Tutorial",
+    "url":"http://docs.djangoproject.com/en/1.9/intro/tutorial01/",
+    "views":14},
+    {"title":"Django Rocks",
+    "url":"http://www.djangorocks.com/",
+    "views":16},
+    {"title":"How to Tango with Django",
+    "url":"http://www.tangowithdjango.com/",
+    "views":18}]
+    
+    other_pages=[
+    {"title":"Bottle",
+    "url":"http://bottlepy.or/docs/dev/",
+    "views":18},
+    {"title":"Flask",
+    "url":"http://flask.pocoo.org",
+        "views":20}]
     cats = {
         "Python": {"pages": python_pages, "views": 128, "likes": 64},
         "Django": {"pages": django_pages, "views": 64, "likes": 32},
