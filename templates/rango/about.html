@@ -11,6 +11,9 @@
         <div>
             <img src="{% static "images/cat.jpg" %}" alt="Picture of my cat, Cooper"/>  
         </div>
+		<div>
+			<img src="{{ MEDIA_URL}}cat.jpg" alt="Another picture of my cat, Cooper"/>
+		</div>
 <p>visits: {{ visits }}</p>
 {% endblock %}
 
