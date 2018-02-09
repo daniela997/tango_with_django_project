@@ -134,10 +134,12 @@ MEDIA_URL = '/media/'
 LOGIN_URL = '/rango/login/'
 
 PASSWORD_HASHERS = [
-    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
-    'django.contrib.auth.hashers.BCryptPasswordHasher',
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
-]
+    #'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    #'django.contrib.auth.hashers.BCryptPasswordHasher',
+    # these can be used if there's bcrypt installed but a new database migration would be needed
+]
+
 
 
